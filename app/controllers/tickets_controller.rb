@@ -7,6 +7,9 @@ class TicketsController < ApplicationController
     @ticket = @project.tickets.build
   end
   
+  def show
+  end
+  
   def create
     @ticket = @project.tickets.build(ticket_params)
     if @ticket.save
